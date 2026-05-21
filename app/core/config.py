@@ -20,6 +20,7 @@ class LLMConfig(BaseModel):
     api_key: SecretStr
     temperature: float = 0.0
     max_tokens: int = 8192
+    timeout: int = 3600
 
 
 class LangSmithConfig(BaseModel):

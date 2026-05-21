@@ -1,0 +1,39 @@
+2026-05-21 19:47:00  INFO      api.rca                   创建RCA会话: fb1e407362934be0
+2026-05-21 19:47:00  INFO      api.rca                   日志分析完成: 3c733b45a7374a5e, 发现 1 个问题
+2026-05-21 19:47:00  INFO      api.rca                   查询分析完成: 235a848fb2bf4835, 发现 3 个问题
+2026-05-21 19:47:00  INFO      api.rca                   指标分析完成: bdfde345c06a4e1b, 健康分数: 60.12
+2026-05-21 19:47:00  INFO      api.rca                   RCA报告生成完成: 9497e7d622f749bd
+2026-05-21 19:47:00  ERROR     api.rca                   报告生成失败: 2 validation errors for RCAReportResponse
+root_causes
+  Input should be a valid dictionary [type=dict_type, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/dict_type
+recommendations
+  Input should be a valid dictionary [type=dict_type, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.13/v/dict_type
+2026-05-21 19:47:01  DEBUG     langsmith.client          Tracing control thread func compress parallel called
+2026-05-21 19:47:01  DEBUG     langsmith.client          Main thread is dead, stopping tracing thread
+2026-05-21 19:47:01  DEBUG     langsmith.client          Tracing thread draining queue on exit: qsize=30
+2026-05-21 19:47:01  DEBUG     langsmith.client          Draining batch in langsmith mode
+2026-05-21 19:47:01  DEBUG     langsmith.client          Main thread is dead, stopping compression thread
+2026-05-21 19:47:01  DEBUG     langsmith.client          Compression thread final flush: trace_count=0
+2026-05-21 19:47:01  DEBUG     langsmith.client          Compression thread final flush: no data to send
+2026-05-21 19:47:01  DEBUG     langsmith.client          Compressed traces control thread is shutting down
+2026-05-21 19:47:01  DEBUG     langsmith.client          Tracing control thread is shutting down
+2026-05-21 19:47:01  DEBUG     langsmith.client          Closing Client.session
+2026-05-21 19:47:01  DEBUG     langsmith.client          Closing Client.session
+2026-05-21 19:47:08  INFO      api.rca                   创建RCA会话: c29efb7353824993
+2026-05-21 19:47:08  INFO      api.rca                   日志分析完成: 3321fef206474939, 发现 1 个问题
+2026-05-21 19:47:08  INFO      api.rca                   查询分析完成: 6d5301f6650e489c, 发现 3 个问题
+2026-05-21 19:47:08  INFO      api.rca                   指标分析完成: 612bf19305104246, 健康分数: 60.12
+2026-05-21 19:47:08  INFO      api.rca                   RCA报告生成完成: ccea7c8d6bfb407e
+2026-05-21 19:47:17  DEBUG     langsmith.client          Tracing control thread func compress parallel called
+2026-05-21 19:47:17  DEBUG     langsmith.client          Main thread is dead, stopping tracing thread
+2026-05-21 19:47:17  DEBUG     langsmith.client          Tracing thread draining queue on exit: qsize=30
+2026-05-21 19:47:17  DEBUG     langsmith.client          Draining batch in langsmith mode
+2026-05-21 19:47:17  DEBUG     langsmith.client          Main thread is dead, stopping compression thread
+2026-05-21 19:47:17  DEBUG     langsmith.client          Compression thread final flush: trace_count=0
+2026-05-21 19:47:17  DEBUG     langsmith.client          Compression thread final flush: no data to send
+2026-05-21 19:47:17  DEBUG     langsmith.client          Compressed traces control thread is shutting down
+2026-05-21 19:47:17  DEBUG     langsmith.client          Tracing control thread is shutting down
+2026-05-21 19:47:17  DEBUG     langsmith.client          Closing Client.session
+2026-05-21 19:47:17  DEBUG     langsmith.client          Closing Client.session

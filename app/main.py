@@ -11,16 +11,8 @@ from fastapi.openapi.docs import (
 from fastapi.staticfiles import StaticFiles
 
 from app.core.config import settings
+from app.routers import rca_router
 # from app.core.database import close_db, init_db
-# from app.router import (
-#     agent_router,
-#     api_router,
-#     chat_router,
-#     fs_router,
-#     knowledge_base_router,
-#     knowledge_graph_router,
-#     system_router,
-# )
 
 # 项目根目录下的 static/(与 app/ 同级)
 STATIC_DIR = Path(__file__).resolve().parent.parent / "static"
@@ -82,14 +74,9 @@ def create_app() -> FastAPI:
             redoc_js_url="/static/redoc.standalone.js",
         )
 
-    # app.include_router(api_router, prefix=settings.API_PREFIX)
-    # 业务路由直接挂在 /api 下,匹配前端 axios baseURL
-    # app.include_router(system_router, prefix=settings.API_PREFIX)
-    # app.include_router(knowledge_base_router, prefix=settings.API_PREFIX)
-    # app.include_router(knowledge_graph_router, prefix=settings.API_PREFIX)
-    # app.include_router(fs_router, prefix=settings.API_PREFIX)
-    # app.include_router(chat_router, prefix=settings.API_PREFIX)
-    # app.include_router(agent_router, prefix=settings.API_PREFIX)
+    # 挂载RCA路由
+    app.include_router(rca_router)
+
     return app
 
 
