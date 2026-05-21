@@ -1,0 +1,12 @@
+[project]
+name = "dbrca-postgres"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "deepagents>=0.6.3",
+    "fastapi>=0.136.1",
+    "langchain-openai>=1.2.1",
+    "sqlalchemy>=2.0.49",
+]
