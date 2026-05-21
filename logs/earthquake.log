@@ -158,3 +158,774 @@ recommendations
 2026-05-21 19:47:52  DEBUG     langsmith.client          Tracing control thread is shutting down
 2026-05-21 19:47:52  DEBUG     langsmith.client          Closing Client.session
 2026-05-21 19:47:52  DEBUG     langsmith.client          Closing Client.session
+2026-05-21 22:41:06  DEBUG     asyncio                   Using selector: KqueueSelector
+2026-05-21 22:41:12  INFO      api.agent                 处理代理查询: session=fb6348c2a59e42b3, query=分析这个错误：connection refused...
+2026-05-21 22:41:12  INFO      agent.main                构建主智能体  subagents=['log_analyzer', 'query_analyzer', 'metrics_analyzer', 'report_gen']  tools_per_agent={'log_analyzer': 4, 'query_analyzer': 3, 'metrics_analyzer': 5, 'report_gen': 4}  session=fb6348c2a59e42b3
+2026-05-21 22:41:12  INFO      langchain_openai.chat_models._client_utils  langchain-openai detected http_proxy, https_proxy and no explicit `http_socket_options` / `http_client` / `http_async_client` / `openai_proxy`; skipping the custom `httpx` transport so httpx's env-proxy auto-detection applies. Pass `http_socket_options=[...]` to opt back into kernel-level TCP keepalive tuning on top of the env proxy.
+2026-05-21 22:41:12  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:12  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:12  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:12  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:12  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:12  INFO      agent.main                主智能体构建完成  session=fb6348c2a59e42b3
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:12  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  ERROR     api.agent                 代理查询失败: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****test is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback (most recent call last):
+  File "/Users/jihui/code/dbrca_postgres/app/api/agent.py", line 93, in query_agent
+    result = agent.invoke(
+        {
+    ...<12 lines>...
+        }
+    )
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/main.py", line 3880, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<11 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/main.py", line 2936, in stream
+    for _ in runner.tick(
+             ~~~~~~~~~~~^
+        [t for t in loop.tasks.values() if not t.writes],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        schedule_task=loop.accept_push,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/_runner.py", line 207, in tick
+    run_with_retry(
+    ~~~~~~~~~~~~~~^
+        t,
+        ^^
+    ...<10 lines>...
+        },
+        ^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 585, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 684, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 426, in invoke
+    ret = self.func(*args, **kwargs)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 1335, in model_node
+    result = wrap_model_call_handler(request, _execute_model_sync)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/middleware/todo.py", line 244, in wrap_model_call
+    return handler(request.override(system_message=new_system_message))
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/skills.py", line 1126, in wrap_model_call
+    return handler(modified_request)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/filesystem.py", line 1667, in wrap_model_call
+    return handler(request)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/subagents.py", line 761, in wrap_model_call
+    return handler(request.override(system_message=new_system_message))
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/summarization.py", line 965, in wrap_model_call
+    return handler(request.override(messages=truncated_messages))
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_anthropic/middleware/prompt_caching.py", line 165, in wrap_model_call
+    return handler(request)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 1304, in _execute_model_sync
+    output = model_.invoke(messages)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5881, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 474, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1823, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1630, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1970, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1655, in _generate
+    _handle_openai_api_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1650, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1215, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<51 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****test is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+During task with name 'model' and id 'dd0f5c96-707b-1ad2-6da4-3be1c87cc575'
+2026-05-21 22:41:13  INFO      agent.main                构建主智能体  subagents=['log_analyzer', 'query_analyzer', 'metrics_analyzer', 'report_gen']  tools_per_agent={'log_analyzer': 4, 'query_analyzer': 3, 'metrics_analyzer': 5, 'report_gen': 4}  session=1a51ca74c8424184
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  INFO      agent.main                主智能体构建完成  session=1a51ca74c8424184
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  ERROR     api.agent                 问题分析失败: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****test is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback (most recent call last):
+  File "/Users/jihui/code/dbrca_postgres/app/api/agent.py", line 282, in analyze_issue
+    result = agent.invoke(
+        {
+    ...<12 lines>...
+        }
+    )
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/main.py", line 3880, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<11 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/main.py", line 2936, in stream
+    for _ in runner.tick(
+             ~~~~~~~~~~~^
+        [t for t in loop.tasks.values() if not t.writes],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        schedule_task=loop.accept_push,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/_runner.py", line 207, in tick
+    run_with_retry(
+    ~~~~~~~~~~~~~~^
+        t,
+        ^^
+    ...<10 lines>...
+        },
+        ^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 585, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 684, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 426, in invoke
+    ret = self.func(*args, **kwargs)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 1335, in model_node
+    result = wrap_model_call_handler(request, _execute_model_sync)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/middleware/todo.py", line 244, in wrap_model_call
+    return handler(request.override(system_message=new_system_message))
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/skills.py", line 1126, in wrap_model_call
+    return handler(modified_request)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/filesystem.py", line 1667, in wrap_model_call
+    return handler(request)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/subagents.py", line 761, in wrap_model_call
+    return handler(request.override(system_message=new_system_message))
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/summarization.py", line 965, in wrap_model_call
+    return handler(request.override(messages=truncated_messages))
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_anthropic/middleware/prompt_caching.py", line 165, in wrap_model_call
+    return handler(request)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 1304, in _execute_model_sync
+    output = model_.invoke(messages)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5881, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 474, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1823, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1630, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1970, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1655, in _generate
+    _handle_openai_api_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1650, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1215, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<51 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****test is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+During task with name 'model' and id 'ff6ab40a-c576-b797-748c-6969133e8912'
+2026-05-21 22:41:13  INFO      api.agent                 开始数据库诊断: session=5c46556495814875, host=localhost
+2026-05-21 22:41:13  INFO      agent.main                构建主智能体  subagents=['log_analyzer', 'query_analyzer', 'metrics_analyzer', 'report_gen']  tools_per_agent={'log_analyzer': 4, 'query_analyzer': 3, 'metrics_analyzer': 5, 'report_gen': 4}  session=5c46556495814875
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  DEBUG     deepagents.profiles.harness.harness_profiles  No harness profile matched pre-built model ChatOpenAI (identifier='deepseek-chat', provider='openai'); using defaults. If you registered a profile for this model, ensure the key matches the model's resolved provider and identifier.
+2026-05-21 22:41:13  INFO      agent.main                主智能体构建完成  session=5c46556495814875
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  DEBUG     langsmith._internal._serde  Failed to use model_dump to serialize <class 'langchain_core.tools.structured.StructuredTool'> to JSON: PydanticSerializationError(Unable to serialize unknown type: <class 'pydantic._internal._model_construction.ModelMetaclass'>)
+2026-05-21 22:41:13  ERROR     api.agent                 数据库诊断失败: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****test is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback (most recent call last):
+  File "/Users/jihui/code/dbrca_postgres/app/api/agent.py", line 362, in diagnose_database
+    result = agent.invoke(
+        {
+    ...<12 lines>...
+        }
+    )
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/main.py", line 3880, in invoke
+    for chunk in self.stream(
+                 ~~~~~~~~~~~^
+        input,
+        ^^^^^^
+    ...<11 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ):
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/main.py", line 2936, in stream
+    for _ in runner.tick(
+             ~~~~~~~~~~~^
+        [t for t in loop.tasks.values() if not t.writes],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        schedule_task=loop.accept_push,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/_runner.py", line 207, in tick
+    run_with_retry(
+    ~~~~~~~~~~~~~~^
+        t,
+        ^^
+    ...<10 lines>...
+        },
+        ^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/pregel/_retry.py", line 585, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 684, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langgraph/_internal/_runnable.py", line 426, in invoke
+    ret = self.func(*args, **kwargs)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 1335, in model_node
+    result = wrap_model_call_handler(request, _execute_model_sync)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/middleware/todo.py", line 244, in wrap_model_call
+    return handler(request.override(system_message=new_system_message))
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/skills.py", line 1126, in wrap_model_call
+    return handler(modified_request)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/filesystem.py", line 1667, in wrap_model_call
+    return handler(request)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/subagents.py", line 761, in wrap_model_call
+    return handler(request.override(system_message=new_system_message))
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 297, in composed
+    outer_result = outer(request, inner_handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/deepagents/middleware/summarization.py", line 965, in wrap_model_call
+    return handler(request.override(messages=truncated_messages))
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 287, in inner_handler
+    inner_result = inner(req, handler)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_anthropic/middleware/prompt_caching.py", line 165, in wrap_model_call
+    return handler(request)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain/agents/factory.py", line 1304, in _execute_model_sync
+    output = model_.invoke(messages)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5881, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 474, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1823, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1630, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1970, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1655, in _generate
+    _handle_openai_api_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1650, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1215, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<51 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jihui/code/dbrca_postgres/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****test is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+During task with name 'model' and id '44f50f95-f13a-a271-d4f0-e7e0e3da4385'
+2026-05-21 22:41:28  DEBUG     langsmith.client          Tracing control thread func compress parallel called
+2026-05-21 22:41:28  DEBUG     langsmith.client          Handling batch in langsmith mode

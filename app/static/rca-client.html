@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postgres RCA - 多智能体分析系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        input, textarea, button {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: inherit;
+            margin-bottom: 10px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .output {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            min-height: 200px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 3px;
+        }
+
+        .message.start {
+            background: #e3f2fd;
+            color: #1976d2;
+            border-left: 3px solid #1976d2;
+        }
+
+        .message.thinking {
+            background: #fff3e0;
+            color: #f57c00;
+            border-left: 3px solid #f57c00;
+        }
+
+        .message.response {
+            background: #e8f5e9;
+            color: #388e3c;
+            border-left: 3px solid #388e3c;
+        }
+
+        .message.end {
+            background: #f3e5f5;
+            color: #7b1fa2;
+            border-left: 3px solid #7b1fa2;
+        }
+
+        .message.error {
+            background: #ffebee;
+            color: #c62828;
+            border-left: 3px solid #c62828;
+        }
+
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .chat-message.user {
+            background: #e3f2fd;
+            text-align: right;
+            color: #1976d2;
+        }
+
+        .chat-message.assistant {
+            background: #f3e5f5;
+            text-align: left;
+            color: #7b1fa2;
+        }
+
+        .chat-input {
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input input {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        .chat-input button {
+            margin-bottom: 0;
+            padding: 12px 20px;
+        }
+
+        .status {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .status-label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .status-value {
+            color: #666;
+        }
+
+        .tab-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 10px;
+            background: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgba(102, 126, 234, 0.3);
+            border-radius: 50%;
+            border-top-color: #667eea;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Postgres RCA 分析系统</h1>
+            <p>多智能体数据库故障诊断和根因分析</p>
+        </div>
+
+        <div class="content">
+            <!-- 左侧：同步查询和流式分析 -->
+            <div class="section">
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="switchTab('query')">同步查询</button>
+                    <button class="tab-button" onclick="switchTab('analyze')">综合分析</button>
+                    <button class="tab-button" onclick="switchTab('diagnose')">数据库诊断</button>
+                </div>
+
+                <!-- 同步查询标签页 -->
+                <div id="query" class="tab-content active">
+                    <div class="section-title">同步查询</div>
+                    <textarea id="queryInput" placeholder="输入您的查询内容...&#10;例如: 分析这个错误：connection refused&#10;或: 为什么缓存命中率这么低？"></textarea>
+                    <button onclick="submitQuery()">🚀 查询</button>
+                </div>
+
+                <!-- 综合分析标签页 -->
+                <div id="analyze" class="tab-content">
+                    <div class="section-title">综合分析</div>
+                    <textarea id="analyzeQuery" placeholder="问题描述..."></textarea>
+                    <textarea id="logContent" placeholder="日志内容 (可选)..." style="min-height: 80px;"></textarea>
+                    <button onclick="submitAnalyze()">📊 分析</button>
+                </div>
+
+                <!-- 数据库诊断标签页 -->
+                <div id="diagnose" class="tab-content">
+                    <div class="section-title">数据库诊断</div>
+                    <input type="text" id="dbHost" placeholder="数据库主机 (localhost)">
+                    <textarea id="issueDesc" placeholder="问题描述..."></textarea>
+                    <button onclick="submitDiagnose()">🏥 诊断</button>
+                </div>
+
+                <!-- 输出区域 -->
+                <div class="section-title">分析结果</div>
+                <div class="output" id="output"></div>
+
+                <!-- 状态信息 -->
+                <div class="status">
+                    <div class="status-item">
+                        <span class="status-label">会话ID</span>
+                        <span class="status-value" id="sessionId">-</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">耗时</span>
+                        <span class="status-value" id="processingTime">-</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">系统状态</span>
+                        <span class="status-value" id="systemStatus">检查中...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：WebSocket聊天 -->
+            <div class="section">
+                <div class="section-title">💬 实时聊天</div>
+                <div class="chat-container">
+                    <div class="chat-messages" id="chatMessages"></div>
+                    <div class="chat-input">
+                        <input type="text" id="chatInput" placeholder="输入您的问题...">
+                        <button onclick="sendChatMessage()" style="padding: 12px 20px;">发送</button>
+                    </div>
+                </div>
+
+                <div class="section-title" style="margin-top: 20px;">会话管理</div>
+                <button onclick="getSessions()">📋 查看所有会话</button>
+                <button onclick="clearOutput()" style="background: #ff9800;">🧹 清空输出</button>
+                <button onclick="checkHealth()" style="background: #4caf50;">💚 健康检查</button>
+
+                <div id="sessionsOutput" class="output" style="margin-top: 15px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:7777';
+        let ws = null;
+        let sessionId = null;
+
+        function switchTab(tab) {
+            // 隐藏所有标签页
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // 显示选中的标签页
+            document.getElementById(tab).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function addMessage(type, content) {
+            const output = document.getElementById('output');
+            const messageEl = document.createElement('div');
+            messageEl.className = `message ${type}`;
+
+            if (content.length > 500) {
+                content = content.substring(0, 500) + '...';
+            }
+
+            messageEl.textContent = content;
+            output.appendChild(messageEl);
+            output.scrollTop = output.scrollHeight;
+        }
+
+        async function submitQuery() {
+            const query = document.getElementById('queryInput').value.trim();
+            if (!query) {
+                alert('请输入查询内容');
+                return;
+            }
+
+            clearOutput();
+            addMessage('start', '📝 发送查询...');
+
+            try {
+                const response = await fetch(`${API_BASE}/api/agent/query`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    sessionId = result.session_id;
+                    document.getElementById('sessionId').textContent = sessionId;
+                    document.getElementById('processingTime').textContent =
+                        `${result.processing_time_ms.toFixed(1)}ms`;
+
+                    addMessage('response', result.response || '无响应');
+                    addMessage('end', `✓ 分析完成`);
+                } else {
+                    addMessage('error', `❌ 错误: ${result.detail}`);
+                }
+            } catch (error) {
+                addMessage('error', `❌ 请求失败: ${error.message}`);
+            }
+        }
+
+        async function submitAnalyze() {
+            const query = document.getElementById('analyzeQuery').value.trim();
+            if (!query) {
+                alert('请输入问题描述');
+                return;
+            }
+
+            const logContent = document.getElementById('logContent').value.trim();
+
+            clearOutput();
+            addMessage('start', '📊 开始分析...');
+
+            try {
+                const params = new URLSearchParams({
+                    query: query,
+                    ...(logContent && { log_content: logContent })
+                });
+
+                const response = await fetch(`${API_BASE}/api/agent/analyze?${params}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    sessionId = result.session_id;
+                    document.getElementById('sessionId').textContent = sessionId;
+                    document.getElementById('processingTime').textContent =
+                        `${result.processing_time_ms.toFixed(1)}ms`;
+
+                    addMessage('response', result.response || '分析完成');
+                } else {
+                    addMessage('error', `❌ 错误: ${result.detail}`);
+                }
+            } catch (error) {
+                addMessage('error', `❌ 请求失败: ${error.message}`);
+            }
+        }
+
+        async function submitDiagnose() {
+            const dbHost = document.getElementById('dbHost').value.trim() || 'localhost';
+            const issue = document.getElementById('issueDesc').value.trim();
+
+            if (!issue) {
+                alert('请输入问题描述');
+                return;
+            }
+
+            clearOutput();
+            addMessage('start', '🏥 开始数据库诊断...');
+
+            try {
+                const response = await fetch(
+                    `${API_BASE}/api/agent/diagnose?` +
+                    `db_host=${encodeURIComponent(dbHost)}&` +
+                    `issue_description=${encodeURIComponent(issue)}`,
+                    { method: 'POST' }
+                );
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    sessionId = result.session_id;
+                    document.getElementById('sessionId').textContent = sessionId;
+                    document.getElementById('processingTime').textContent =
+                        `${result.processing_time_ms.toFixed(1)}ms`;
+
+                    addMessage('response', result.diagnosis || '诊断完成');
+                } else {
+                    addMessage('error', `❌ 错误: ${result.detail}`);
+                }
+            } catch (error) {
+                addMessage('error', `❌ 请求失败: ${error.message}`);
+            }
+        }
+
+        function connectWebSocket() {
+            sessionId = sessionId || `session-${Date.now()}`;
+
+            ws = new WebSocket(`ws://localhost:7777/ws/chat/${sessionId}`);
+
+            ws.onopen = () => {
+                console.log('WebSocket已连接');
+            };
+
+            ws.onmessage = (event) => {
+                const message = JSON.parse(event.data);
+                const chatMessages = document.getElementById('chatMessages');
+
+                if (message.type === 'response') {
+                    const msgEl = document.createElement('div');
+                    msgEl.className = 'chat-message assistant';
+                    msgEl.textContent = message.content;
+                    chatMessages.appendChild(msgEl);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+            };
+
+            ws.onerror = (error) => {
+                console.error('WebSocket错误:', error);
+                document.getElementById('chatMessages').innerHTML +=
+                    '<div style="color: red;">❌ 连接失败</div>';
+            };
+        }
+
+        function sendChatMessage() {
+            if (!ws || ws.readyState !== WebSocket.OPEN) {
+                connectWebSocket();
+            }
+
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+
+            if (!message) return;
+
+            // 显示用户消息
+            const chatMessages = document.getElementById('chatMessages');
+            const userMsgEl = document.createElement('div');
+            userMsgEl.className = 'chat-message user';
+            userMsgEl.textContent = message;
+            chatMessages.appendChild(userMsgEl);
+
+            // 发送到服务器
+            ws.send(JSON.stringify({ query: message }));
+
+            input.value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        async function getSessions() {
+            try {
+                const response = await fetch(`${API_BASE}/api/agent/sessions`);
+                const result = await response.json();
+
+                const output = document.getElementById('sessionsOutput');
+                output.innerHTML = `<strong>📋 活跃会话 (${result.total_sessions})</strong><br>`;
+
+                result.sessions.forEach(s => {
+                    output.innerHTML += `
+                        • ${s.session_id} (${s.query_count} 个查询)<br>
+                    `;
+                });
+            } catch (error) {
+                document.getElementById('sessionsOutput').innerHTML =
+                    `❌ 获取会话失败: ${error.message}`;
+            }
+        }
+
+        async function checkHealth() {
+            try {
+                const response = await fetch(`${API_BASE}/api/agent/health`);
+                const result = await response.json();
+
+                const output = document.getElementById('sessionsOutput');
+                output.innerHTML = `
+                    <strong>💚 系统健康检查</strong><br>
+                    状态: ${result.status}<br>
+                    活跃会话: ${result.session_count}<br>
+                    <br><strong>代理状态:</strong><br>
+                    ${Object.entries(result.agent_status)
+                        .map(([name, status]) => `• ${name}: ${status}`)
+                        .join('<br>')}
+                `;
+            } catch (error) {
+                document.getElementById('sessionsOutput').innerHTML =
+                    `❌ 健康检查失败: ${error.message}`;
+            }
+        }
+
+        function clearOutput() {
+            document.getElementById('output').innerHTML = '';
+            document.getElementById('sessionId').textContent = '-';
+            document.getElementById('processingTime').textContent = '-';
+        }
+
+        // 初始化
+        document.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && e.ctrlKey) {
+                submitQuery();
+            }
+        });
+
+        document.getElementById('chatInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendChatMessage();
+            }
+        });
+
+        // 页面加载时检查系统状态
+        window.addEventListener('load', () => {
+            checkHealth();
+        });
+    </script>
+</body>
+</html>

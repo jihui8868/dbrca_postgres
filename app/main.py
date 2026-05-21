@@ -12,6 +12,8 @@ from fastapi.staticfiles import StaticFiles
 
 from app.core.config import get_settings
 from app.routers import rca_router
+from app.api.agent import agent_router
+from app.api.websocket import ws_router
 
 settings = get_settings()
 # from app.core.database import close_db, init_db
@@ -78,6 +80,12 @@ def create_app() -> FastAPI:
 
     # 挂载RCA路由
     app.include_router(rca_router)
+
+    # 挂载多智能体API路由
+    app.include_router(agent_router)
+
+    # 挂载WebSocket路由
+    app.include_router(ws_router)
 
     return app
 
