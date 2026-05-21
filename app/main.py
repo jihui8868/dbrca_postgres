@@ -10,8 +10,10 @@ from fastapi.openapi.docs import (
 )
 from fastapi.staticfiles import StaticFiles
 
-from app.core.config import settings
+from app.core.config import get_settings
 from app.routers import rca_router
+
+settings = get_settings()
 # from app.core.database import close_db, init_db
 
 # 项目根目录下的 static/(与 app/ 同级)

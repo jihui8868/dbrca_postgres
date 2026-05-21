@@ -50,6 +50,14 @@ class LogConfig(BaseModel):
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_nested_delimiter="__", case_sensitive=False)
+
+    # 项目信息
+    PROJECT_NAME: str = "Postgres RCA"
+    VERSION: str = "0.1.0"
+    API_PREFIX: str = "/api"
+    CORS_ORIGINS: list[str] = ["*"]
+
+    # 数据库配置
     postgres: DatabaseConfig
     llm: LLMConfig
     langsmith: LangSmithConfig = LangSmithConfig()
@@ -57,7 +65,7 @@ class Settings(BaseSettings):
     app: AppConfig = AppConfig()
     log: LogConfig = LogConfig()
 
-    
+
 
 
 @lru_cache(maxsize=1)
