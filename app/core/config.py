@@ -42,6 +42,10 @@ class AppConfig(BaseModel):
     port: int = 8888
     log_level: str = "INFO"
 
+class LogConfig(BaseModel):
+    # 日志配置
+    LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
+    LOG_DIR: str = os.getenv("LOG_DIR", "logs")
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_nested_delimiter="__", case_sensitive=False)
@@ -50,6 +54,9 @@ class Settings(BaseSettings):
     langsmith: LangSmithConfig = LangSmithConfig()
     agent: AgentConfig = AgentConfig()
     app: AppConfig = AppConfig()
+    log: LogConfig = LogConfig()
+
+    
 
 
 @lru_cache(maxsize=1)
